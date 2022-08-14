@@ -1,0 +1,1 @@
+const loginModalDel=(e,o,t,l)=>{setTimeout((()=>{document.querySelector(e).remove(),document.body.classList.remove(o)}),200),t&&(document.querySelector(".navbar__login").textContent="Выйти из "+l)};export default loginModalDel;

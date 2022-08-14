@@ -1,0 +1,1 @@
+import Visit from"./visit.js";class VisitTherapist extends Visit{constructor(s,t,r,e,i,a,c){super(s,t,r,e,i,a),this.age=c}createFullCard(){const s=this.createCard();return s.querySelector(".show-more-args").innerHTML=`<p class="card-atribute"><span>Возраст: </span>${this.age}</p>`,s}}export default VisitTherapist;

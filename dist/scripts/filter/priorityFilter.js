@@ -1,0 +1,1 @@
+const getFilteredPriority=t=>{let e;const o=document.querySelectorAll(".card-atribute_priority");for(const o of t.children)t.value===o.value&&(e=o.textContent.toLowerCase());o.forEach((t=>{const o=t.parentElement;t.textContent.includes(e)||(o.parentElement.hidden=!0,console.log(t.textContent+" -- "+e))}))};export default getFilteredPriority;

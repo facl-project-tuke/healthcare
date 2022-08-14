@@ -1,0 +1,1 @@
+const postCardTherapist=async(t,a,e,o,r,s,n,i,c)=>{const d=await fetch(`https://ajax.test-danit.com/api/v2/cards/${c}`,{method:i,headers:{"Content-Type":"application/json",Authorization:`Bearer ${t}`},body:JSON.stringify({name:a,doctor:e,visitTarget:o,urgency:r,desc:s,moreInfo:{age:n}})});return d.ok?d.json():"NEt"};export default postCardTherapist;

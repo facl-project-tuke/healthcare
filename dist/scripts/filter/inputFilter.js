@@ -1,0 +1,1 @@
+const getGilteredInputValue=t=>{const e=document.querySelectorAll(".card-title");document.querySelectorAll(".card-atribute_desc").forEach(((n,l)=>{const r=n.parentElement;if(!0==!r.parentElement.hidden){n.textContent.split(": ")[1].startsWith(t.value)||e[l].textContent.startsWith(t.value)||(r.parentElement.hidden=!0)}}))};export default getGilteredInputValue;

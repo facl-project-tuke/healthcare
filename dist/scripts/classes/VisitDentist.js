@@ -1,0 +1,1 @@
+import Visit from"./visit.js";class VisitDentist extends Visit{constructor(t,s,i,r,e,a,n){super(t,s,i,r,e,a),this.lastVisit=n}createFullCard(){const t=this.createCard();return t.querySelector(".show-more-args").innerHTML=`<p class="card-atribute"><span>Последний визит: </span>${this.lastVisit}</p>`,t}}export default VisitDentist;

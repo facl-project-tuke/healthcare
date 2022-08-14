@@ -1,0 +1,1 @@
+const postCardDentist=async(t,a,e,o,s,n,i,r,c)=>{const d=await fetch(`https://ajax.test-danit.com/api/v2/cards/${c}`,{method:r,headers:{"Content-Type":"application/json",Authorization:`Bearer ${t}`},body:JSON.stringify({name:a,doctor:e,visitTarget:o,urgency:s,desc:n,moreInfo:{lastVisit:i}})});return d.ok?d.json():"NEt"};export default postCardDentist;
